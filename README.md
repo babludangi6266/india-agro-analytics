@@ -1,50 +1,67 @@
-# React + TypeScript + Vite
+Project Overview
+India Agro Analytics is a data analytics project that provides insights into crop production, yield, and area of cultivation in India from 1950 to 2020. Using data visualization, it helps users explore and understand trends in agriculture over the years. The project is built with React and Mantine for the frontend, with additional data processing functions to compute yearly and average statistics.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+Displays the crops with maximum and minimum production for each year.
+Shows average yield and cultivation area per crop across all available years.
+Provides an easy-to-navigate UI with tables and sections.
 
-Currently, two official plugins are available:
+Setup Instructions
+1. Prerequisites
+Make sure you have the following installed:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Node.js (v14 or higher)
+Yarn (recommended but optional)
+2. Clone the Repository
+Clone the project repository from GitHub:
+git clone https://github.com/your-username/india-agro-analytics.git
+cd india-agro-analytics
+3. Install Dependencies
+Use Yarn to install the project dependencies:
+yarn install
 
-## Expanding the ESLint configuration
+If you're using npm instead, run:
+npm install
+Running the Project
+To start the development server:
+yarn dev
+or, with npm:
+npm run dev
+This will launch the project locally, and you can view it in your browser at http://localhost:3000.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Building the Project for Production
+To build the project for production, use:
+yarn build
 
-- Configure the top-level `parserOptions` property like this:
+or, with npm:
+npm run build
+The output will be available in the dist directory.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Running the Production Build Locally
+After building, you can preview the production build with:
+yarn preview
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+or, with npm:
+npm run preview
+Folder Structure
+plaintext
+india-agro-analytics/
+├── public/                  # Public assets (e.g., favicon, images)
+├── src/
+│   ├── components/          # Reusable React components
+│   │   ├── CropMaxMinTable.tsx
+│   │   └── CropAverageTable.tsx
+│   ├── data/                # Dataset file (data.json)
+│   ├── utils/               # Data processing functions
+│   │   ├── dataProcessing.ts
+│   ├── App.tsx              # Main app component
+│   └── main.tsx             # Entry point
+├── .gitignore
+├── README.md
+├── package.json
+└── vite.config.ts           # Vite configuration
+Technologies Used
+React: JavaScript library for building user interfaces
+Mantine: UI component library for React, used for tables, cards, and styling
+Vite: Frontend build tool for fast development
+TypeScript: Superset of JavaScript for static typing
