@@ -65,3 +65,9 @@ React: JavaScript library for building user interfaces
 Mantine: UI component library for React, used for tables, cards, and styling
 Vite: Frontend build tool for fast development
 TypeScript: Superset of JavaScript for static typing
+
+Second Table 
+![Screenshot 2024-11-14 122500](https://github.com/user-attachments/assets/b9e167f0-2bb1-4450-a197-e30bc5b03981)
+
+First Table
+![Screenshot 2024-11-14 122452](https://github.com/user-attachments/assets/9ed81538-9add-42dc-9c95-c8f46e53b651)
