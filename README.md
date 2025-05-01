@@ -90,7 +90,7 @@ Ensure the following are installed:
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/your-username/india-agro-analytics.git
+git clone https://github.com/babludangi6266/india-agro-analytics.git
 cd india-agro-analytics
 ```
 
